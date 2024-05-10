@@ -1,0 +1,16 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URI}
+  datasource:
+    url: jdbc:postgresql://microservices-sql-db:5432/microservices?currentSchema=user-schema
+    username: user
+    password: postgres
+my:
+  property:
+    test: User Service
+
